@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 // '/' ma gayo vane k dekhauney, request vaye paxi response hunai parxa
 app.get("/", (req, res) => {
   // res.send("<h1>Hey</h1>");
-  res.render("home.ejs"); //vies bhitra ko file render garxa
+  res.render("home.ejs", { name: "Dipesh" }); //vies bhitra ko file render garxa
 });
 
 app.get("/about", (req, res) => {
